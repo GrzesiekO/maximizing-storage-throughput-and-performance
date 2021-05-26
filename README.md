@@ -9,44 +9,10 @@ Errors or corrections? Contact [mburbey@amazon.com](mailto:mburbey@amazon.com).
 
 In this workshop you learn how to obtain higher levels of performance with EBS, S3 and EFS.
 
-#### 1. Deploy AWS resources using CloudFormation
+#### 1. Deploy AWS resources using CloudFormation (should have been done)
 
 1. Click one of the launch links in the table below to deploy the resources using CloudFormation.  To avoid errors during deployment, select a region in which you have previously created AWS resources.
 
-  | **Region Code** | **Region Name** | **Launch** |
-  | --- | --- | --- |
-  | us-west-1 | US West (N. California) | [Launch in us-west-1](https://console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | us-west-2 | US West (Oregon) | [Launch in us-west-2](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | us-east-1 | US East (N. Virginia) | [Launch in us-east-1](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | us-east-2 | US East (Ohio) | [Launch in us-east-2](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ca-central-1 | Canada (Central) | [Launch in ca-central-1](https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | eu-central-1 | EU (Frankfurt) | [Launch in eu-central-1](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | eu-west-1 | EU (Ireland) | [Launch in eu-west-1](https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | eu-west-2 | EU (London) | [Launch in eu-west-2](https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | eu-west-3 | EU (Paris) | [Launch in eu-west-3](https://console.aws.amazon.com/cloudformation/home?region=eu-west-3#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | eu-north-1 | EU (Stockholm) | [Launch in eu-north-1](https://console.aws.amazon.com/cloudformation/home?region=eu-north-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-east-1 | Asia Pacific (Hong Kong) | [Launch in ap-east-1](https://console.aws.amazon.com/cloudformation/home?region=ap-east-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-northeast-1 | Asia Pacific (Tokyo) | [Launch in ap-northeast-1](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-northeast-2 | Asia Pacific (Seoul) | [Launch in ap-northeast-2](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-northeast-3 | Asia Pacific (Osaka-Local) | [Launch in ap-northeast-3](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-3#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-southeast-1 | Asia Pacific (Singapore) | [Launch in ap-southeast-1](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-southeast-2 | Asia Pacific (Sydney) | [Launch in ap-southeast-2](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | ap-south-1 | Asia Pacific (Mumbai) | [Launch in ap-south-1](https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | me-south-1 | Middle East (Bahrain) | [Launch in me-south-1](https://console.aws.amazon.com/cloudformation/home?region=me-south-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-  | sa-east-1 | South America (São Paulo) | [Launch in sa-east-1](https://console.aws.amazon.com/cloudformation/home?region=sa-east-1#/stacks/new?stackName=StoragePerformanceWorkshop&amp;templateURL=https://storage-specialists-cf-templates.s3-us-west-2.amazonaws.com/2019/storage_performance.json) |
-
-2. Click  **Next**  on the Create Stack page.
-3. Click  **Next**.
-4. Click  **Next**  Again. (skipping the Options and Advanced options sections)
-5. On the Review page, scroll to the bottom and check the boxes to acknowledge that CloudFormation will create IAM resources, then click  **Create stack**.  
-
-  ![](/images/mod1cf1.png)
-6. Click **Events**. Events will not auto refresh.  You will need to manually refresh the page using the refresh button on the right side of the page.  
-7. Watch for **StoragePerformanceWorkshop** and a status of **CREATE_COMPLETE**  
-
-  ![](/images/cf_complete.png)  
-
-**Note:** Instances that are launched as part of this CloudFormation template may be in the initializing state for few minutes.  
 
 #### 2. Connect to the EC2 Instance using EC2 Instance Connect
 
@@ -67,7 +33,13 @@ Note: The SSH session will disconnect after a period of inactivity. If your sess
 
 ## EBS Performance Part 1
 
-FIO was automatically launched by the CloudFormation template.  We will use FIO to exhaust the burst credits on the 1 GB GP2 volume.
+FIO was automatically launched by the CloudFormation template.  We will check the initial performance reported by FIO (shouldn't be higher or lower than 6000 iops as per tempalate used).
+
+```
+screen -ls
+screen -r <Id from screen ls>
+ctrl+c to send a break to fio if still running
+```
 
 1. Run the following command to ensure FIO is running on the instance.  Output should be similar to below.  
 ```
